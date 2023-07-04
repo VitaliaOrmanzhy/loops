@@ -19,18 +19,20 @@ for (let i = 10; i <= 20; i++) {
 
 //3
 for (let i = 1; i <= 9; i++) {
-    results[2].push(i);
+    results[2].push(i * 7);
 }
 
 //4
-for (let i = 1; i < 15; i++) {
-    results[3] = i + i++;
+results[3] = 0;
+
+for (let i = 1; i <= 15; i++) {
+    results[3] += i;
 }
 
 //5
-results[4] = 1;
+results[4] = 1n;
 
-for (let i = 15; i <= 35; i++) {
+for (let i = 15n; i <= 35n; i++) {
     results[4] *= i;
 }
 
